@@ -1,38 +1,24 @@
-<?php
+<!DOCTYPE html>
+<html>
 
-$categorias = [];
-$categorias[] = 'infantil';
-$categorias[] = 'adolescente';
-$categorias[] = 'adulto';
-$categorias[] = 'idoso';
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="author" content="" >
+	<meta name="description" content="">
+	<meta name="viewport" content="width-device-width, initial-scale1">
+</head>
 
-//print_r($categorias);
+<body>
 
-$nome = 'Gabriel';
-$idade = 14;
+	<p>FORMULÁRIO PARA INSCRIÇÃO DE COMPETIDORES</p>
 
-/*var_dump($nome);
-var_dump($idade);*/
+<form action="script.php" method="POST">
+	<p>Seu nome:<input type="text" name="name" required></p>
+	<p>Sua idade:<input type="text" name="age" required></p>
+	<p><input type="submit"></p>
+</form>
 
-if($idade >= 6 && $idade <= 12)
-{
-	for($i = 0; $i <= count($categorias); $i++)
-	{
-		if($categorias[$i] == 'infantil')
-			echo "o nadador" .$nome. "compete na categoria infantil";
-	}
-}
-else if ($idade >= 13 && $idade <= 18)
-{
-	for($i = 0; $i <= count($categorias); $i++)
-	{
-		if($categorias[$i] == 'adolescente')
-			echo "o nadador" .$nome. "compete na categoria adolescente";
-	}
-}
-else
-{
-	for($i = 0; $i <= count($categorias); $i++)
-		if($categorias[$i] == 'adulto')
-			echo "o nadador " .$nome. "compete na categoria adulto";
-}
+</body>
+
+</html>
